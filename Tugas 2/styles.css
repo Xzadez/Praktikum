@@ -1,7 +1,6 @@
-/* Styling the body */
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #3A1C71, #D76D77, #FFAF7B);
+  background-color: #87CEFA;
   height: 100vh;
   margin: 0;
   display: flex;
@@ -9,7 +8,6 @@ body {
   align-items: center;
 }
 
-/* Container for the to-do list */
 .todo-container {
   background-color: white;
   padding: 30px;
@@ -19,7 +17,6 @@ body {
   text-align: center;
 }
 
-/* Title styling */
 h1 {
   margin: 0;
   font-size: 24px;
@@ -30,7 +27,6 @@ h1 span {
   font-size: 26px;
 }
 
-/* Input and button container */
 .input-container {
   display: flex;
   justify-content: space-between;
@@ -40,7 +36,6 @@ h1 span {
   padding: 10px;
 }
 
-/* Input field styling */
 #task-input {
   border: none;
   padding: 10px;
@@ -55,7 +50,6 @@ h1 span {
   color: #888;
 }
 
-/* Button styling */
 button {
   border: none;
   background-color: #FF5722;
@@ -71,7 +65,6 @@ button:hover {
   background-color: #e64a19;
 }
 
-/* Task list styling */
 ul {
   list-style-type: none;
   padding: 0;
@@ -111,8 +104,27 @@ li:hover {
   color: #e64a19;
 }
 
-/* Checkbox for tasks */
 li input[type="checkbox"] {
   transform: scale(1.5);
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .todo-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #task-input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  li {
+    padding: 8px 15px;
+  }
 }
