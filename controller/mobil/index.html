@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom Mobil</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Showroom Mobil</h1>
+        <form id="mobilForm">
+          <input type="hidden" id="id_mobil" name="id_mobil">
+          <label for="title">Merk:</label>
+          <input type="text" id="title" name="title" required>
+          <label for="subtitle">Nama Mobil:</label>
+          <input type="text" id="subtitle" name="subtitle" required>
+          <label for="harga">Harga Rp:</label>
+          <input type="text" id="harga" name="harga" required>
+          <label for="img">URL Gambar:</label>
+          <input type="text" id="img" name="img">
+          <label for="id_kategori">Kategori:</label>
+          <select id="id_kategori" name="id_kategori">
+              <option value="">--Pilih Kategori--</option>
+          </select>
+          <button type="submit" id="submitButton">Tambah Mobil</button>
+      </form>
+      
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Merk</th>
+                    <th>Harga</th>
+                    <th>Image</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="mobilTable"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

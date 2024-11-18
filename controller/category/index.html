@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom Mobil</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Showroom Mobil</h1>
+        <form id="kategoriForm">
+          <input type="hidden" id="id_kategori" name="id_kategori">
+          <label for="nama">Nama Kategori:</label>
+          <input type="text" id="nama" name="nama" required>
+          <label for="img_kategori">URL Gambar:</label>
+          <input type="text" id="img_kategori" name="img">
+          <button type="submit">Simpan Kategori</button>
+        </form>
+      
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Image</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="kategoriTable"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
